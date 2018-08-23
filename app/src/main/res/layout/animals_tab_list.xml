@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for single animal item in Animals tab -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/animals_tab_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/fennec_fox" />
+
+    <LinearLayout
+        android:id="@+id/animals_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/animals_name"
+            style="@style/animalInfoStyle"
+            android:gravity="bottom"
+            android:text="Animal Name"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/animals_location"
+            style="@style/animalInfoStyle"
+            android:gravity="center_vertical"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/animals_conservation_status"
+            style="@style/animalInfoStyle"
+            android:gravity="top"
+            android:text="Conservation Status" />
+
+    </LinearLayout>
+
+</LinearLayout>

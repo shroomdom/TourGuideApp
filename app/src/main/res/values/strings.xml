@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tour Guide App</string>
+    <string name="home_tab_name">Home</string>
+    <string name="animals_tab_name">Animals</string>
+    <string name="activities_tab_name">Activities</string>
+    <string name="restaurants_tab_name">Restaurants</string>
+    <string name="shops_tab_name">Shops</string>
+    <string name="activity_name">Activity Name</string>
+    <string name="time">Time</string>
+    <string name="price">Price</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="location">Location</string>
+    <string name="hours">Hours</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="shop_location">Location</string>
+    <string name="description">Description</string>
+    <string name="address">Address</string>
+    <string name="zoo_hours">Hours</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for single activity item in Activities tab -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/activities_name"
+        style="@style/textViewAttributes"
+        android:text="@string/activity_name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/activities_time"
+        style="@style/textViewAttributes"
+        android:paddingLeft="30dp"
+        android:text="@string/time"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/activities_price"
+        style="@style/textViewAttributes"
+        android:paddingLeft="30dp"
+        android:text="@string/price"
+        android:textSize="16sp" />
+
+</LinearLayout>
