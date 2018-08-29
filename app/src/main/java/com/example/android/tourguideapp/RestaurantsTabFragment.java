@@ -21,13 +21,13 @@ public class RestaurantsTabFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.restaurants_tab, container, false);
 
         ArrayList<RestaurantsTab> restaurantNames = new ArrayList<RestaurantsTab>();
-        restaurantNames.add(new RestaurantsTab("Albert's",
-                "Location: Lost Forest",
-                "Monday through Friday, 11 AM to 7:30 PM\n" +
-                        "Saturday and Sunday, 10 AM to 7:30 PM"));
-        restaurantNames.add(new RestaurantsTab("Sabertooth Grill",
-                "Location: Elephant Odyssey",
-                "Opens at 10:30 AM"));
+        restaurantNames.add(new RestaurantsTab(getString(R.string.rest_one_name),
+                getString(R.string.rest_one_location),
+                getString(R.string.rest_one_weekday_hrs) +
+                        getString(R.string.rest_one_weekend_hrs)));
+        restaurantNames.add(new RestaurantsTab(getString(R.string.rest_two_name),
+                getString(R.string.rest_two_location),
+                getString(R.string.rest_two_hrs)));
 
         RestaurantsAdapter adapter = new RestaurantsAdapter(getActivity(), restaurantNames);
 

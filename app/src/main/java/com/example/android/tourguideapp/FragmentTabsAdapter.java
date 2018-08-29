@@ -59,9 +59,9 @@ public class FragmentTabsAdapter extends FragmentPagerAdapter {
         } else if (position == 2) {
             return mContext.getString(R.string.activities_tab_name);
         } else if (position == 3) {
-            return "Restaurants";
+            return mContext.getString(R.string.restaurants_tab_name);
         } else {
-            return "Shops";
+            return mContext.getString(R.string.shops_tab_name);
         }
     }
 }

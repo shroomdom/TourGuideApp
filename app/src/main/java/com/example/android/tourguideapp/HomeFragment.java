@@ -17,16 +17,16 @@ public class HomeFragment extends Fragment{
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.home_tab, container, false);
 
-        String homeDescription = "San Diego Zoo";
-        String homeAddress = "2920 Zoo Dr, San Diego, CA 92101";
-        String homeHours = "Hours: \n" +
-                "Sunday\t9AM–9PM\n" +
-                "Monday\t9AM–9PM\n" +
-                "Tuesday\t9AM–9PM\n" +
-                "Wednesday\t9AM–9PM\n" +
-                "Thursday\t9AM–9PM\n" +
-                "Friday\t9AM–9PM\n" +
-                "Saturday\t9AM–9PM\n";
+        String homeDescription = getString(R.string.homepg_place_name);
+        String homeAddress = getString(R.string.homepg_place_address);
+        String homeHours = getString(R.string.homepg_hrs_start) +
+                getString(R.string.homepg_hrs_sunday) +
+                getString(R.string.homepg_hrs_monday) +
+                getString(R.string.homepg_hrs_tuesday) +
+                getString(R.string.homepg_hrs_wednesday) +
+                getString(R.string.homepg_hrs_thursday) +
+                getString(R.string.homepg_hrs_friday) +
+                getString(R.string.homepg_hrs_saturday);
 
         Home homeObject = new Home(homeDescription, homeAddress, homeHours);
 

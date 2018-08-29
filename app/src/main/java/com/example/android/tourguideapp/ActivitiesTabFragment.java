@@ -21,10 +21,10 @@ public class ActivitiesTabFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activities_tab, container, false);
 
         ArrayList<ActivitiesTab> activityNames = new ArrayList<ActivitiesTab>();
-        activityNames.add(new ActivitiesTab("Balboa Park Miniature Train",
-                "11 AM - 6:30 PM", "$3 for ages 1 and older; free if younger than age 1"));
-        activityNames.add(new ActivitiesTab("Skyfari Aerial Tram",
-                "10 AM - 9 PM", "Free"));
+        activityNames.add(new ActivitiesTab(getString(R.string.act_one),
+                getString(R.string.act_one_times), getString(R.string.act_one_price)));
+        activityNames.add(new ActivitiesTab(getString(R.string.act_two),
+                getString(R.string.act_two_times), getString(R.string.act_two_price)));
 
         ActivitiesAdapter adapter = new ActivitiesAdapter(getActivity(), activityNames);
 

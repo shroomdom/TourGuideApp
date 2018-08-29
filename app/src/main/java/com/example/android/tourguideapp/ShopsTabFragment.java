@@ -20,10 +20,10 @@ public class ShopsTabFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.shops_tab, container, false);
 
         ArrayList<ShopsTab> shopNames = new ArrayList<ShopsTab>();
-        shopNames.add(new ShopsTab("San Diego Zoo Kids Store",
-                "Location: Front Street"));
-        shopNames.add(new ShopsTab("Zootique",
-                "Location: Front Street"));
+        shopNames.add(new ShopsTab(getString(R.string.shop_one_name),
+                getString(R.string.shop_one_location)));
+        shopNames.add(new ShopsTab(getString(R.string.shop_two_name),
+                getString(R.string.shop_two_location)));
 
         ShopsAdapter adapter = new ShopsAdapter(getActivity(), shopNames);
 

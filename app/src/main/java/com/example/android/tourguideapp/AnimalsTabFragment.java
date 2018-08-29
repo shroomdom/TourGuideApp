@@ -23,12 +23,12 @@ public class AnimalsTabFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.animals_tab, container, false);
 
         ArrayList<AnimalsTab> animalNames = new ArrayList<AnimalsTab>();
-        animalNames.add(new AnimalsTab(R.drawable.fennec_fox, "Artic Fox",
-                "Zoo Location: Northern Frontier",
-                "Conservation Status: Stable"));
-        animalNames.add(new AnimalsTab(R.drawable.giant_panda, "Giant Panda",
-                "Zoo Location: Panda Canyon",
-                "Conservation Status: Threatened"));
+        animalNames.add(new AnimalsTab(R.drawable.fennec_fox, getString(R.string.animal_one),
+                getString(R.string.animal_one_location),
+                getString(R.string.animal_one_status)));
+        animalNames.add(new AnimalsTab(R.drawable.giant_panda, getString(R.string.animal_two),
+                getString(R.string.animal_two_location),
+                getString(R.string.animal_two_status)));
 
         AnimalsAdapter adapter = new AnimalsAdapter(getActivity(), animalNames);
 
